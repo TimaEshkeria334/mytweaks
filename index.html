@@ -20,7 +20,7 @@
 			<a class="btn btn-sm btn-primary" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://timaeshkeria334.github.io/mytweaks/">Add to Cydia</a>
 			<a class="btn btn-sm btn-primary" href="sileo://source/https://timaeshkeria334.github.io/mytweaks/">Add to Sileo</a>
 			<a class="btn btn-sm btn-primary" href="zbra://sources/add/https://timaeshkeria334.github.io/mytweaks/">Add to Zebra</a>
-			<a class="btn btn-sm btn-outline-primary" href="ipa/">Приложения (.ipa) →</a>
+			<a class="btn btn-sm btn-outline-primary" href="debs/">Приложения →</a>
 		</div>
 	</div>
 </div>
@@ -35,8 +35,9 @@
 			AppSync Unified 116.0
 		</div>
 		<div class="card-body">
-		  <p class="card-text">Установка неподписанных / fakesigned IPA — нужен для установки приложений из раздела
-			<a href="ipa/">ipa/</a>. Поддерживается iOS 5.0 – 18.2, обе архитектуры.</p>
+		  <p class="card-text">Установка неподписанных / fakesigned IPA — нужен для установки приложений не из App Store.
+			Все приложения этого репозитория теперь лежат в <code>debs/</code> как обычные .deb и ставятся
+			через Cydia / Sileo / Zebra (требуется AppSync Unified — см. ниже).</p>
 		  <p class="card-text"><small>By Karen/あけみ · <a href="https://cydia.akemi.ai/">official page</a> ·
 			<a href="debs/ai.akemi.appsyncunified_116.0_iphoneos-arm.deb">deb (arm)</a> ·
 			<a href="debs/ai.akemi.appsyncunified_116.0_iphoneos-arm64.deb">deb (arm64)</a></small></p>
@@ -89,16 +90,18 @@
 </div>
 
 <div class="container">
-	<h3 class="page-header">Приложения (.ipa)</h3>
+	<h3 class="page-header">Приложения</h3>
 	<div class="card">
 		<div class="card-body">
-			<p class="card-text mb-2">Отдельные .ipa — качаются прямо со страницы <a href="ipa/"><code>ipa/</code></a>
-			или по ссылкам ниже. Для установки нужен AppSync Unified (см. выше).</p>
+			<p class="card-text mb-2">Все приложения — обычные .deb в каталоге <a href="debs/"><code>debs/</code></a>
+			и ставятся через Cydia / Sileo / Zebra как полноценные пакеты (для сторонних — AppSync Unified,
+			см. выше).</p>
 			<ul class="mb-0">
-				<li><a href="ipa/legacyai_3.5.ipa">LegacyAI 3.5</a> — <small>iOS 6.0+, 1.9 МБ</small></li>
-				<li><a href="ipa/lovit_1.1.ipa">Ловит 1.1</a> — <small>iOS 6.0+, 4.5 МБ</small></li>
-				<li><a href="ipa/retroclash_1.70.ipa">Clash of Clans 1.70</a> — <small>iOS 4.3+, 29.8 МБ</small></li>
-				<li><a href="ipa/trubach_1.1.ipa">Трубач 1.1</a> — <small>iOS 5.1+, 650 КБ</small></li>
+				<li><a href="debs/com.githublegacy.app_1.1_iphoneos-arm.deb">GitHub Legacy 1.1</a> — <small><code>com.githublegacy.app</code> · iOS 5.0+ · arm</small></li>
+				<li><a href="debs/com.sashok.legacyai_3.5_iphoneos-arm.deb">LegacyAI 3.5</a> — <small><code>com.sashok.legacyai</code> · iOS 6.0+ · arm</small></li>
+				<li><a href="debs/ru.computershik.lovit_1.1_iphoneos-arm.deb">Lovit 1.1</a> — <small><code>ru.computershik.lovit</code> · iOS 6.0+ · arm</small></li>
+				<li><a href="debs/com.supercell.magic_1.70_iphoneos-arm.deb">Clash of Clans 1.70</a> — <small><code>com.supercell.magic</code> · iOS 4.3+ · arm</small></li>
+				<li><a href="debs/ru.computershik.trubach_1.1_iphoneos-arm.deb">Trubach 1.1</a> — <small><code>ru.computershik.trubach</code> · iOS 5.1+ · arm</small></li>
 			</ul>
 		</div>
 	</div>

@@ -80,6 +80,44 @@ SHA1: d301d95e5bae509099e6d3e71cdf95b168d69731
 SHA256: c64c336c402d3066c4570a57ab822ecb92e9dcca836e1b03137af1f451e8e39e
 SHA512: 2cc4400839ca65d8ac66b758ff042e0a60a3f7c751db73815285062baad2680ebef56807b60e3c45f53a85365ebf1eb6be09dce7402a95717ca8e55d9ea9b091
 
+Package: com.sashok.legacyai
+Name: LegacyAI
+Description: Lightweight GitHub client for iOS 5+ devices - browse repositories, read READMEs, and download releases. Distributed as deb.
+Maintainer: timagray
+Author: timagray
+Section: Applications
+Priority: optional
+Architecture: iphoneos-arm
+Version: 3.5
+Installed-Size: 2244
+Depends: firmware (>= 5.0)
+Icon: file:///Applications/LegacyAI.app/Icon-72@2x.png
+Filename: debs/com.sashok.legacyai_3.5_iphoneos-arm.deb
+Size: 1957384
+MD5sum: a930087b34137675bba7f06a1bbeed7b
+SHA1: 4a596390768c56cda821f1df99b2c2b1e7e39e8a
+SHA256: df4f3fbaa17ecfac1d33bc4fa71bf58116269ed634ef7f61982cc2ca1cab49b0
+SHA512: 495b79520c7bcc55b9a79271ee2f76dd4593ff632999c42590620ace722d7eb5a6b4c4976b88a8b1de12558db125b27240b88bce86b1af04c3f2ebdf401323b5
+
+Package: com.supercell.magic
+Name: Clash of Clans
+Description: Supercell game - deb packaged from IPA.
+Maintainer: timagray
+Author: timagray
+Section: Applications
+Priority: optional
+Architecture: iphoneos-arm
+Version: 1.70
+Installed-Size: 34498
+Depends: firmware (>= 4.3)
+Icon: file:///Applications/Clash of Clans.app/Icon-72@2x.png
+Filename: debs/com.supercell.magic_1.70_iphoneos-arm.deb
+Size: 29681766
+MD5sum: b19ecbe7451fd120b928a421f48bb637
+SHA1: c7c4af61f0f316dbb8c56a9259825fcfe351143e
+SHA256: 862046e14cfdd7628780e1bb9e8d83ee9fd1eed7ec1504e86eabf2a5cc77d60f
+SHA512: ef18c2480062a103563ac236756e61eed82b7167f11a232fa0dc4e104884b2197ef7614d7371a29a726528cfa7f88a5fbc5bbc91a6ca28f236d960694f347d00
+
 Package: ellekit
 Name: ElleKit
 Version: 1.2
@@ -120,6 +158,25 @@ SHA1: 485e6c42ea3dcb1243eeb1ebb4eeefbd3efc640d
 SHA256: 3ae1e48245c947fb4f6011a89ecf9d19c89832dda76c5af0350c95d2f123ef93
 SHA512: 6da3270b68b359faaef4b1b704ca5e00e546a72f90f1a0fc9dee0dcc67370bc8d51771f3a13c6caa81566fa56e993f3cc3dd9708eb22a0f5964f689611729b06
 
+Package: ru.computershik.lovit
+Name: Lovit
+Description: Music listening app for iOS 6+ - deb packaged from IPA.
+Maintainer: timagray
+Author: timagray
+Section: Applications
+Priority: optional
+Architecture: iphoneos-arm
+Version: 1.1
+Installed-Size: 8304
+Depends: firmware (>= 5.0)
+Icon: file:///Applications/Lovit.app/Icon-72@2x.png
+Filename: debs/ru.computershik.lovit_1.1_iphoneos-arm.deb
+Size: 3514126
+MD5sum: 6740d02ea1ff38ca7e7287e28bd5b05d
+SHA1: e22bbdf5bd2b334bb2c2e7d3471ce4835ecb7fbd
+SHA256: 808ea5a91bc37220d5ef8661f3956c547869579cde274164531fd71b744b08eb
+SHA512: 63f3ccb1d6d146067f31a45211a17f39e0a803fc643ed9045e3913c03d82f6b038964f3cdae7e4fe7b84a7fb68b220d2a932d26ac89b1e4898cbe5107d2d5d9e
+
 Package: ru.computershik.troubadour
 Name: Troubadour
 Description: Клиент YouTube для iOS 5.1 и новее
@@ -137,4 +194,23 @@ MD5sum: 390ceb7a9babee3f0e705e36bc3b1c55
 SHA1: 0646be8572b37e848ff05d11463f319ab8977e18
 SHA256: 276678b99f919181b455f2b95466a009628faa6a22714f8cdafba24f89b711cd
 SHA512: 88363401be7e896cadb608bb3fe1f512f17665c3181c53d3505047df5b3db39d463dbcb10f1e83bc87002331a043dcb9f6718a49dd0ccd4e7160e782720359ad
+
+Package: ru.computershik.trubach
+Name: Trubach
+Description: YouTube client for iOS 5.1 and newer - deb packaged from IPA.
+Maintainer: timagray
+Author: timagray
+Section: Applications
+Priority: optional
+Architecture: iphoneos-arm
+Version: 1.1
+Installed-Size: 1424
+Depends: firmware (>= 5.1)
+Icon: file:///Applications/Trubach.app/Icon-72@2x.png
+Filename: debs/ru.computershik.trubach_1.1_iphoneos-arm.deb
+Size: 525308
+MD5sum: 50f38f3e7dd6a521983f3d96e29328bb
+SHA1: 79df91fffbf0dfbd17b215819f7a6aeec363f1c4
+SHA256: 16fe63cfe763e7dce788c25c88c45cbe05a8b8359c25bd94ec067f68264df1f4
+SHA512: 330aa86ce2a9acb9086ab826c88d4a898c1aa3185b34c4aff660ad7276c9f5d0a6bb28cbe763817d3f6d06b7ded28a03a3cad803f446ac00094f622f28cb52aa
 

@@ -1,13 +1,13 @@
 # timagray — my APT repo
 
-Личный репозиторий для Cydia / Sileo / Zebra + страница приложений (.ipa). Хостится на GitHub Pages.
+Личный репозиторий для Cydia / Sileo / Zebra + приложения (.deb). Хостится на GitHub Pages.
 
 ```
 https://timaeshkeria334.github.io/mytweaks/
 ```
 
 - индекс пакетов: <https://timaeshkeria334.github.io/mytweaks/>
-- приложения .ipa: <https://timaeshkeria334.github.io/mytweaks/ipa/>
+- приложения (.deb): <https://timaeshkeria334.github.io/mytweaks/debs/>
 
 ## Пакеты
 
@@ -17,28 +17,35 @@ https://timaeshkeria334.github.io/mytweaks/
 | `ellekit` | 1.2 | `iphoneos-arm`, `iphoneos-arm64` | Tweak-инъектор, предоставляет `mobilesubstrate` |
 | `com.githublegacy.app` | 1.1 | `iphoneos-arm` | GitHub Legacy — клиент GitHub для iOS 5+ |
 | `com.ra1nndev.yamus1c` | 2.1.2 | `iphoneos-arm` | YaMus1c — клиент Яндекс.Музыки для iOS 6 |
+| `com.sashok.legacyai` | 3.5 | `iphoneos-arm` | LegacyAI — клиент GitHub для iOS 5+ |
+| `com.supercell.magic` | 1.70 | `iphoneos-arm` | Clash of Clans — игра для iOS 4.3+ |
+| `ru.computershik.lovit` | 1.1 | `iphoneos-arm` | Lovit — музыка для iOS 6+ |
 | `ru.computershik.troubadour` | 1.6 | `iphoneos-arm` | Troubadour — клиент YouTube для iOS 5.1+ |
+| `ru.computershik.trubach` | 1.1 | `iphoneos-arm` | Trubach — клиент YouTube для iOS 5.1+ |
 
-### Приложения (.ipa)
+### Приложения
 
-Лежат в `ipa/`, каталог с кнопками — `ipa/index.html`, ссылки есть и на главной.
+Все приложения — обычные `.deb` в `debs/`, внутри них лежит `Applications/<App>.app`
+(с `Info.plist` и иконкой). Ставятся через Cydia / Sileo / Zebra как обычные пакеты.
 
 | Файл | Приложение | Bundle ID | Версия | Min iOS |
 |---|---|---|---|---|
-| `ipa/legacyai_3.5.ipa` | LegacyAI | `com.sashok.legacyai` | 3.5 | 6.0 |
-| `ipa/lovit_1.1.ipa` | Ловит | `ru.computershik.lovit` | 1.1 | 6.0 |
-| `ipa/retroclash_1.70.ipa` | Clash of Clans | `com.supercell.magic` | 1.70 | 4.3 |
-| `ipa/trubach_1.1.ipa` | Трубач | `ru.computershik.trubach` | 1.1 | 5.1 |
+| `debs/com.githublegacy.app_1.1_iphoneos-arm.deb` | GitHub Legacy | `com.githublegacy.app` | 1.1 | 5.0 |
+| `debs/com.sashok.legacyai_3.5_iphoneos-arm.deb` | LegacyAI | `com.sashok.legacyai` | 3.5 | 6.0 |
+| `debs/ru.computershik.lovit_1.1_iphoneos-arm.deb` | Lovit | `ru.computershik.lovit` | 1.1 | 6.0 |
+| `debs/com.supercell.magic_1.70_iphoneos-arm.deb` | Clash of Clans | `com.supercell.magic` | 1.70 | 4.3 |
+| `debs/ru.computershik.trubach_1.1_iphoneos-arm.deb` | Trubach | `ru.computershik.trubach` | 1.1 | 5.1 |
 
-### Как ставить .ipa на iOS 10.3.3 / 12.5.8
+### Как ставить приложения (deb) на iOS 10.3.3 / 12.5.8
 
 1. Поставить `ai.akemi.appsyncunified` 116.0 из репозитория (он идёт с зависимостью
    `mobilesubstrate (>= 0.9.5100)`; на iOS 10/12 это Cydia Substrate, который уже стоит после джейлбрейка —
    ElleKit там не нужен и конфликтует с ним).
-2. Скачать `.ipa` по ссылке с <https://timaeshkeria334.github.io/mytweaks/ipa/>
-   (Safari сохранит в «Файлы», либо скачать через Filza).
-3. Установить: открыть `.ipa` в Filza → «Install», либо `ipainstaller <файл>.ipa` по SSH,
-   либо через AppSync в настройках. Перезагрузить springboard (`killall SpringBoard`).
+2. Установить нужный пакет приложения из этого репозитория (он виден в Cydia/Sileo/Zebra как обычный пакет).
+3. Перезагрузить springboard (`killall SpringBoard`).
+
+Для сторонних приложений (не из App Store) AppSync Unified нужен обязательно — без него они
+установятся как tweaks-пакеты с ошибкой, либо не установятся вовсе.
 
 ### Почему здесь лежит ElleKit
 
@@ -62,11 +69,10 @@ Conflicts: ... , ellekit (< 1.1)
 
 ```
 .
-├── debs/                  # все .deb
-├── ipa/                   # все .ipa + index.html (генерируется)
+├── debs/                  # все .deb (твики + приложения с Applications/<App>.app)
 ├── Packages{,.gz,.bz2,.xz}
 ├── Release                # метаданные + хеши индексов
-├── update-repo.sh         # пересборка индексов и ipa/index.html
+├── update-repo.sh         # пересборка индексов APT
 ├── depictions/            # HTML-страницы описаний (?p=<package>)
 ├── CydiaIcon.png          # иконка репозитория
 └── index.html             # лендинг
@@ -84,20 +90,19 @@ git add -A && git commit -m "add my.tweak 1.0" && git push
 `MD5sum`, `SHA1`, `SHA256`, `SHA512`, при наличии `depictions/<package>/info.xml`
 подставляет `Depiction`, и перегенерирует `Packages*` + `Release`.
 
-## Добавить приложение (.ipa)
+## Добавить приложение (deb)
 
 ```sh
-cp MyApp.ipa ipa/
+cp MyApp_1.0_iphoneos-arm.deb debs/
 ./update-repo.sh
-git add -A && git commit -m "add MyApp.ipa" && git push
+git add -A && git commit -m "add MyApp" && git push
 ```
 
-Скрипт читает `Payload/*.app/Info.plist` из каждого `.ipa` (bundle id, название, версию,
-`MinimumOSVersion`), вытаскивает иконку в `ipa/icons/`, считает SHA256 и собирает
-`ipa/index.html`. Файлы с пробелами лучше переименовать заранее (`MyApp_1.0.ipa`).
+Приложение упаковывается в deb вида `Applications/<App>.app` (с `Info.plist`, иконкой,
+`Library/MobileSubstrate/DynamicLibraries` при необходимости) + `DEBIAN/control`.
+Зависимости скрипта: `ar`, `tar`, `gzip`, `bzip2`, `xz`, coreutils.
 
-Зависимости скрипта: `ar`, `tar`, `gzip`, `bzip2`, `xz`, coreutils;
-`python3` — опционально (без него `ipa/index.html` не обновляется).
+Если у приложения есть своя страница описания — положите шаблон в `depictions/<package>/info.xml`.
 
 ## Если Cydia не видит изменения
 
