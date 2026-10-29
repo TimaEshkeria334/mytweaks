@@ -44,41 +44,41 @@ SHA1: e0fa412cb3c26718887edd834804c88909297079
 SHA256: 0036f28fcbdb165d4f58968a237ca9fe7b6ed33fea25b9a5eb1fc141f6bf5a09
 SHA512: 8a0d06bf424c760e28d71ec55f430bcb10bc5d09e6579bb84a2aab31b786856dec389f3159d3e016db2e18ab596a6347c388eaaa9c5c388e7c775986879d882a
 
-Package: com.supermamon.newpackage
-Name: New Package
+Package: com.githublegacy.app
+Name: GitHub Legacy
+Description: A lightweight GitHub client for iOS 5+ devices - browse repositories, read READMEs, and download releases.
+Maintainer: kitalev
+Author: kitalev
+Section: Applications
+Depends: firmware (>= 5.0), mobilesubstrate
+Icon: file:///Applications/GitHubLegacy.app/Icon-72@2x.png
 Architecture: iphoneos-arm
-Depends: firmware (>7.0), mobilesubstrate
-Description: This is a sample new package. Firmware should be greater than 7.0
-Maintainer: Reposi3 <reposithree@gmail.com>
-Author: Reposi3 <reposithree@gmail.com>
-Section: Tweaks
-Version: 2.0.0-1
+Version: 1.1
+Installed-Size: 872
 Priority: optional
-Depiction: https://timaeshkeria334.github.io/mytweaks/depictions/?p=com.supermamon.newpackage
-Filename: debs/com.supermamon.newpackage_2.0.0-1_iphoneos-arm.deb
-Size: 854
-MD5sum: 85a01c41aaaa72b48b08d9d0a67f3016
-SHA1: 46bbcd314f5bcb29e05e287f08fe50e6547ea401
-SHA256: b01c426f4e262c901fd0a9dce060d89327af05bdbd203ce7527c133c1bc8cafd
-SHA512: 7c68d881ab4e5e114423c404ae1cac65137dcc3d3b25108d1d5c862df9516ed12e3240cb40bf952ba9bf8d9ef1b04e4cc58097710ead23e0fdd781e0692a20c6
+Filename: debs/com.githublegacy.app_1.1_iphoneos-arm.deb
+Size: 334148
+MD5sum: 26af6e513ae2931d8f010730e4b63d2d
+SHA1: eeed2079382ef2251f82ca982006e0dc0cee2362
+SHA256: a1d03beade74341eddd6fd830935474f5b3a02c7713a45eb451dc4a4f5401e0e
+SHA512: c03cba336be2ba1cf2baecdd771e4c181a7023958344e897d79be552f43f54325d986f9eaa4fd672f0dee100ca201977d9a7518a383205817324fe5f87f92420
 
-Package: com.supermamon.oldpackage
-Name: Old Package
+Package: com.ra1nndev.yamus1c
+Name: YaMus1c
+Description: Yandex Music client for iOS 6 by ra1nndev
+Maintainer: ra1nndev
+Author: ra1nndev
+Section: Multimedia
 Architecture: iphoneos-arm
-Depends: firmware (<7.0)
-Description: This is a sample old package. Firmware should be lower than 7.0
-Maintainer: Reposi3 <reposithree@gmail.com>
-Author: Reposi3 <reposithree@gmail.com>
-Section: Tweaks
-Version: 1.0.0-1
+Version: 2.1.2
+Installed-Size: 376
 Priority: optional
-Depiction: https://timaeshkeria334.github.io/mytweaks/depictions/?p=com.supermamon.oldpackage
-Filename: debs/com.supermamon.oldpackage_1.0.0-1_iphoneos-arm.deb
-Size: 860
-MD5sum: 8c606f0c05217aa2a20949091fe516f0
-SHA1: 44f945218a8f72e24ad69191bfee4a89bb7e9bc0
-SHA256: 2d0cf4ea9ddc1d1be3968c869ddd29bd850eae37ccd9b35d100f72b7aca62f8e
-SHA512: 46768496071d6b6bc93e6ce85c275aa38ac2e8aa0a075d227325f0e6261f9fde70333e7346fa0c43628e391537efe135c7d8775e0b271be76222737a0e8e48bb
+Filename: debs/com.ra1nndev.yamus1c_2.1.2_iphoneos-arm.deb
+Size: 123666
+MD5sum: d6ca4f46ffca4d55a24f78689951f46c
+SHA1: d301d95e5bae509099e6d3e71cdf95b168d69731
+SHA256: c64c336c402d3066c4570a57ab822ecb92e9dcca836e1b03137af1f451e8e39e
+SHA512: 2cc4400839ca65d8ac66b758ff042e0a60a3f7c751db73815285062baad2680ebef56807b60e3c45f53a85365ebf1eb6be09dce7402a95717ca8e55d9ea9b091
 
 Package: ellekit
 Name: ElleKit
@@ -119,4 +119,22 @@ MD5sum: 4e171bcc1cf53e997ae54a335bd41ed0
 SHA1: 485e6c42ea3dcb1243eeb1ebb4eeefbd3efc640d
 SHA256: 3ae1e48245c947fb4f6011a89ecf9d19c89832dda76c5af0350c95d2f123ef93
 SHA512: 6da3270b68b359faaef4b1b704ca5e00e546a72f90f1a0fc9dee0dcc67370bc8d51771f3a13c6caa81566fa56e993f3cc3dd9708eb22a0f5964f689611729b06
+
+Package: ru.computershik.troubadour
+Name: Troubadour
+Description: Клиент YouTube для iOS 5.1 и новее
+Maintainer: computershik
+Author: computershik
+Section: Multimedia
+Depends: firmware (>= 5.1)
+Architecture: iphoneos-arm
+Version: 1.6
+Installed-Size: 10940
+Priority: optional
+Filename: debs/ru.computershik.troubadour_1.6_iphoneos-arm.deb
+Size: 4492160
+MD5sum: 390ceb7a9babee3f0e705e36bc3b1c55
+SHA1: 0646be8572b37e848ff05d11463f319ab8977e18
+SHA256: 276678b99f919181b455f2b95466a009628faa6a22714f8cdafba24f89b711cd
+SHA512: 88363401be7e896cadb608bb3fe1f512f17665c3181c53d3505047df5b3db39d463dbcb10f1e83bc87002331a043dcb9f6718a49dd0ccd4e7160e782720359ad
 
