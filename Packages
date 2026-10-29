@@ -1,3 +1,4 @@
+Package: ai.akemi.appsyncunified
 Conflicts: us.hackulo.appsync50, us.hackulo.appsync50plus, com.hackyouriphone.appsync7, com.teiron.ppsync, appsync50plus2.25pp, com.linusyang.appsync, com.sull.appsyncunified, com.sull.appsyncunifiedbeta, com.xsellize.appsync50, com.xsellize.appsync50plus, appsync50plus.178, appsync50plus2.178, cydia.net.angelxwind.appsyncunified, com.ifucker.appsync, com.sexyphonetech.appsyncunified, appsyncunifiedofficial, org.digbick.asufixed, cn.mingmei.asu623517234615234813, technology.goated.appsync, technology.goated.appsyncunified, vaginalfisting.appsynctool, science.xnu.substitute, akemi.appsink, akemi.appsyncunifed, akemi.appsyncunifed2, akemi.appsyncunifedpatched, appsyncpatched, appsyncrootless, weaponized.autism.technology.appsyncunified, ellekit (< 1.1)
 Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5100), firmware (<= 18.2)
 Depiction: https://cydia.akemi.ai/?page/ai.akemi.appsyncunified
@@ -5,30 +6,6 @@ Maintainer: Karen/あけみ <karen@akemi.ai>
 Homepage: https://cydia.akemi.ai/
 Provides: appsync, net.angelxwind.appsyncunified
 Replaces: us.hackulo.appsync50, net.angelxwind.appsyncunified
-Package: ai.akemi.appsyncunified
-Name: AppSync Unified
-Description: Enables the ability to install unsigned/fakesigned iOS applications.
-Section: Tweaks
-Author: Karen/あけみ, Linus Yang <karen@akemi.ai>
-Architecture: iphoneos-arm64
-Version: 116.0
-Installed-Size: 668
-Priority: optional
-Filename: debs/ai.akemi.appsyncunified_116.0_iphoneos-arm64.deb
-Size: 49472
-MD5sum: d6a31911e878b83e47c6525fa29ecef1
-SHA1: d00d2667c0d5421dddfc70a2734f1d63b972a535
-SHA256: 2bdaac72a6d1b006309b7dd28f51b1e3d351d3d8758fc9f08ca670f1d71eb382
-SHA512: 92577917216cd67f3ce8f640e72de0b3c39128e4e23dc9b9031d387698fcd204db385337ba02fac6bc712e8a3a9ddec113eddd10b690cdae9921c5065cc7d447
-
-Conflicts: us.hackulo.appsync50, us.hackulo.appsync50plus, com.hackyouriphone.appsync7, com.teiron.ppsync, appsync50plus2.25pp, com.linusyang.appsync, com.sull.appsyncunified, com.sull.appsyncunifiedbeta, com.xsellize.appsync50, com.xsellize.appsync50plus, appsync50plus.178, appsync50plus2.178, cydia.net.angelxwind.appsyncunified, com.ifucker.appsync, com.sexyphonetech.appsyncunified, appsyncunifiedofficial, org.digbick.asufixed, cn.mingmei.asu623517234615234813, technology.goated.appsync, technology.goated.appsyncunified, vaginalfisting.appsynctool, science.xnu.substitute, akemi.appsink, akemi.appsyncunifed, akemi.appsyncunifed2, akemi.appsyncunifedpatched, appsyncpatched, appsyncrootless, weaponized.autism.technology.appsyncunified, ellekit (< 1.1)
-Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5100), firmware (<= 18.2)
-Depiction: https://cydia.akemi.ai/?page/ai.akemi.appsyncunified
-Maintainer: Karen/あけみ <karen@akemi.ai>
-Homepage: https://cydia.akemi.ai/
-Provides: appsync, net.angelxwind.appsyncunified
-Replaces: us.hackulo.appsync50, net.angelxwind.appsyncunified
-Package: ai.akemi.appsyncunified
 Name: AppSync Unified
 Description: Enables the ability to install unsigned/fakesigned iOS applications.
 Section: Tweaks
@@ -117,26 +94,6 @@ MD5sum: b19ecbe7451fd120b928a421f48bb637
 SHA1: c7c4af61f0f316dbb8c56a9259825fcfe351143e
 SHA256: 862046e14cfdd7628780e1bb9e8d83ee9fd1eed7ec1504e86eabf2a5cc77d60f
 SHA512: ef18c2480062a103563ac236756e61eed82b7167f11a232fa0dc4e104884b2197ef7614d7371a29a726528cfa7f88a5fbc5bbc91a6ca28f236d960694f347d00
-
-Package: ellekit
-Name: ElleKit
-Version: 1.2
-Architecture: iphoneos-arm64
-Maintainer: Dhinak G <dhinak@dhinak.net>
-Conflicts: com.ex.substitute, org.coolstar.libhooker, science.xnu.substitute, mobilesubstrate, com.saurik.substrate.safemode
-Replaces: com.ex.libsubstitute, org.coolstar.libhooker, mobilesubstrate
-Provides: mobilesubstrate (= 99), org.coolstar.libhooker (= 1.6.9)
-Author: ElleKit Team
-Section: Tweak Injection
-Priority: optional
-Icon: https://ellekit.space/logos/logo.png
-Description: ElleKit tweak injection libraries and loader
-Filename: debs/ellekit_1.2_iphoneos-arm64.deb
-Size: 331444
-MD5sum: 08cc1616ce6387b573c7c9fd21ed5cf9
-SHA1: bd232da8335cd9e2dc5d4911d99bd99d0331b279
-SHA256: e21dc91bdc1be193dc915daecfff45256239b4fe583a36861e662ab1f43906dc
-SHA512: ee6c54fe014dbc6630a6e929a273c0f5ad65ac1b1494e9ad36dbe1fb2aea4a20bcf73d8744fead5a277670c12927680ad5d75e66b7949fdf16bc1dc4067ff313
 
 Package: ellekit
 Name: ElleKit

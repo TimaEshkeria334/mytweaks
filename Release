@@ -3,17 +3,17 @@ Label: timagray
 Suite: stable
 Version: 1.0
 Codename: ios
-Architectures: iphoneos-arm iphoneos-arm64
+Architectures: iphoneos-arm
 Components: main
 Description: my tweaks for ios 12.5.8(5s)
-Date: Thu, 29 Oct 2026 12:41:27 UTC
+Date: Thu, 29 Oct 2026 13:10:06 UTC
 MD5Sum:
- 841126265da7732ea01135914004024d            10258 Packages
- 9c4ed253788126eedbf8e55b3ca02f78             3584 Packages.gz
- 9c8cbe5014a1f6cef8237d9d922b36ff             3721 Packages.bz2
- 90a41c27b964d5e02a9cc32a18aca0f3             3352 Packages.xz
+ b4efc4b662c37cb98494384d09567a2d             7599 Packages
+ ad714cb33bab45a0a4c5c7268b9c1605             3177 Packages.gz
+ 565bdb458e63e6526c376cc04ad8e2ef             3216 Packages.bz2
+ 2191fa1c6e545c79da10a865f6ba6b38             3020 Packages.xz
 SHA256:
- 09eba5f583ca8fd1903e70eb6aa7fea5f494cbba33ff213be012a244d6fca159            10258 Packages
- 6917a41f5a0d2d21eae1428cda223bb71a305e9d6ac0e2a331accf4e37619995             3584 Packages.gz
- f89b92705b1e5f0d7043851fc3454f0c395709a53950e0f368ad9e9ddaac1049             3721 Packages.bz2
- e5ff9daf9541ca905b8f3f9661405a13e9c115966c0ca5bc278466df4b922e39             3352 Packages.xz
+ 01ef14c4b27ae22dd96b925145caa25b2ea3122b6b19859081c32c869117309d             7599 Packages
+ ea10d76c684e0ca00fe259cdbb9e36803c48d23f41eaf859264960f8a2b0e053             3177 Packages.gz
+ a8fbf09a1662adc747029b39b422a5da427c8069de3b19869e03112140f44075             3216 Packages.bz2
+ 3724159f6ce8bcf0040b3ed1b5507d8733e7384a02511c8d433ae4c0fcb23c9e             3020 Packages.xz

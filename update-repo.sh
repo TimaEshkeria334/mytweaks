@@ -21,6 +21,13 @@ trap 'rm -rf "$tmp"' EXIT
 
 shopt -s nullglob
 for deb in debs/*.deb; do
+	# В индекс по умолчанию идут только rootful-сборки (iphoneos-arm):
+	# Cydia на iOS 10/12 не понимает iphoneos-arm64 и при двух записях
+	# одного пакета может «потерять» его. Rootless включается ROOTLESS=1.
+	case "$deb" in
+		*_iphoneos-arm64.deb)
+			[ "${ROOTLESS:-0}" = "1" ] || continue ;;
+	esac
 	deb_abs=$(realpath "$deb")
 	name=$(basename "$deb")
 	work="$tmp/$name"
@@ -56,6 +63,13 @@ for deb in debs/*.deb; do
 		echo "Depiction: $REPO_URL/depictions/?p=$pkg" >> "$work/ctl/control"
 	fi
 
+	# Cydia надёжнее парсит stanza, если Package: стоит первым полем
+	{
+		grep -i '^Package:' "$work/ctl/control" | head -1
+		grep -vi '^Package:' "$work/ctl/control"
+	} > "$work/ctl/control.sorted"
+	mv "$work/ctl/control.sorted" "$work/ctl/control"
+
 	cat "$work/ctl/control" >> Packages
 	{
 		echo "Filename: $deb"
@@ -78,7 +92,11 @@ xz -9 -k -f Packages
 	echo "Suite: $SUITE"
 	echo "Version: 1.0"
 	echo "Codename: $CODENAME"
-	echo "Architectures: iphoneos-arm iphoneos-arm64"
+	if [ "${ROOTLESS:-0}" = "1" ]; then
+		echo "Architectures: iphoneos-arm iphoneos-arm64"
+	else
+		echo "Architectures: iphoneos-arm"
+	fi
 	echo "Components: main"
 	echo "Description: $REPO_DESC"
 	echo "Date: $(LC_ALL=C date -u '+%a, %d %b %Y %H:%M:%S UTC')"
