@@ -1,28 +1,122 @@
-Package: com.supermamon.newpackage
-Version: 2.0.0-1
+Conflicts: us.hackulo.appsync50, us.hackulo.appsync50plus, com.hackyouriphone.appsync7, com.teiron.ppsync, appsync50plus2.25pp, com.linusyang.appsync, com.sull.appsyncunified, com.sull.appsyncunifiedbeta, com.xsellize.appsync50, com.xsellize.appsync50plus, appsync50plus.178, appsync50plus2.178, cydia.net.angelxwind.appsyncunified, com.ifucker.appsync, com.sexyphonetech.appsyncunified, appsyncunifiedofficial, org.digbick.asufixed, cn.mingmei.asu623517234615234813, technology.goated.appsync, technology.goated.appsyncunified, vaginalfisting.appsynctool, science.xnu.substitute, akemi.appsink, akemi.appsyncunifed, akemi.appsyncunifed2, akemi.appsyncunifedpatched, appsyncpatched, appsyncrootless, weaponized.autism.technology.appsyncunified, ellekit (< 1.1)
+Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5100), firmware (<= 18.2)
+Depiction: https://cydia.akemi.ai/?page/ai.akemi.appsyncunified
+Maintainer: Karen/あけみ <karen@akemi.ai>
+Homepage: https://cydia.akemi.ai/
+Provides: appsync, net.angelxwind.appsyncunified
+Replaces: us.hackulo.appsync50, net.angelxwind.appsyncunified
+Package: ai.akemi.appsyncunified
+Name: AppSync Unified
+Description: Enables the ability to install unsigned/fakesigned iOS applications.
 Section: Tweaks
-Maintainer: Reposi3 <reposithree@gmail.com>
-Depends: firmware (>7.0), mobilesubstrate
+Author: Karen/あけみ, Linus Yang <karen@akemi.ai>
+Architecture: iphoneos-arm64
+Version: 116.0
+Installed-Size: 668
+Priority: optional
+Filename: debs/ai.akemi.appsyncunified_116.0_iphoneos-arm64.deb
+Size: 49472
+MD5sum: d6a31911e878b83e47c6525fa29ecef1
+SHA1: d00d2667c0d5421dddfc70a2734f1d63b972a535
+SHA256: 2bdaac72a6d1b006309b7dd28f51b1e3d351d3d8758fc9f08ca670f1d71eb382
+SHA512: 92577917216cd67f3ce8f640e72de0b3c39128e4e23dc9b9031d387698fcd204db385337ba02fac6bc712e8a3a9ddec113eddd10b690cdae9921c5065cc7d447
+
+Conflicts: us.hackulo.appsync50, us.hackulo.appsync50plus, com.hackyouriphone.appsync7, com.teiron.ppsync, appsync50plus2.25pp, com.linusyang.appsync, com.sull.appsyncunified, com.sull.appsyncunifiedbeta, com.xsellize.appsync50, com.xsellize.appsync50plus, appsync50plus.178, appsync50plus2.178, cydia.net.angelxwind.appsyncunified, com.ifucker.appsync, com.sexyphonetech.appsyncunified, appsyncunifiedofficial, org.digbick.asufixed, cn.mingmei.asu623517234615234813, technology.goated.appsync, technology.goated.appsyncunified, vaginalfisting.appsynctool, science.xnu.substitute, akemi.appsink, akemi.appsyncunifed, akemi.appsyncunifed2, akemi.appsyncunifedpatched, appsyncpatched, appsyncrootless, weaponized.autism.technology.appsyncunified, ellekit (< 1.1)
+Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5100), firmware (<= 18.2)
+Depiction: https://cydia.akemi.ai/?page/ai.akemi.appsyncunified
+Maintainer: Karen/あけみ <karen@akemi.ai>
+Homepage: https://cydia.akemi.ai/
+Provides: appsync, net.angelxwind.appsyncunified
+Replaces: us.hackulo.appsync50, net.angelxwind.appsyncunified
+Package: ai.akemi.appsyncunified
+Name: AppSync Unified
+Description: Enables the ability to install unsigned/fakesigned iOS applications.
+Section: Tweaks
+Author: Karen/あけみ, Linus Yang <karen@akemi.ai>
 Architecture: iphoneos-arm
-Filename: ./debs/com.supermamon.newpackage_2.0.0-1_iphoneos-arm.deb
+Version: 116.0
+Installed-Size: 636
+Priority: optional
+Filename: debs/ai.akemi.appsyncunified_116.0_iphoneos-arm.deb
+Size: 51658
+MD5sum: 536009a11dad57e48a5563224eaffaff
+SHA1: e0fa412cb3c26718887edd834804c88909297079
+SHA256: 0036f28fcbdb165d4f58968a237ca9fe7b6ed33fea25b9a5eb1fc141f6bf5a09
+SHA512: 8a0d06bf424c760e28d71ec55f430bcb10bc5d09e6579bb84a2aab31b786856dec389f3159d3e016db2e18ab596a6347c388eaaa9c5c388e7c775986879d882a
+
+Package: com.supermamon.newpackage
+Name: New Package
+Architecture: iphoneos-arm
+Depends: firmware (>7.0), mobilesubstrate
+Description: This is a sample new package. Firmware should be greater than 7.0
+Maintainer: Reposi3 <reposithree@gmail.com>
+Author: Reposi3 <reposithree@gmail.com>
+Section: Tweaks
+Version: 2.0.0-1
+Priority: optional
+Depiction: https://timaeshkeria334.github.io/mytweaks/depictions/?p=com.supermamon.newpackage
+Filename: debs/com.supermamon.newpackage_2.0.0-1_iphoneos-arm.deb
 Size: 854
 MD5sum: 85a01c41aaaa72b48b08d9d0a67f3016
-Description: This is a sample new package. Firmware should be greater than 7.0
-Name: New Package
-Author: Reposi3 <reposithree@gmail.com>
-Depiction: https://supermamon.github.io/Reposi3/depictions/?p=com.supermamon.newpackage
+SHA1: 46bbcd314f5bcb29e05e287f08fe50e6547ea401
+SHA256: b01c426f4e262c901fd0a9dce060d89327af05bdbd203ce7527c133c1bc8cafd
+SHA512: 7c68d881ab4e5e114423c404ae1cac65137dcc3d3b25108d1d5c862df9516ed12e3240cb40bf952ba9bf8d9ef1b04e4cc58097710ead23e0fdd781e0692a20c6
 
 Package: com.supermamon.oldpackage
-Version: 1.0.0-1
-Section: Tweaks
-Maintainer: Reposi3 <reposithree@gmail.com>
-Depends: firmware (<7.0)
+Name: Old Package
 Architecture: iphoneos-arm
-Filename: ./debs/com.supermamon.oldpackage_1.0.0-1_iphoneos-arm.deb
+Depends: firmware (<7.0)
+Description: This is a sample old package. Firmware should be lower than 7.0
+Maintainer: Reposi3 <reposithree@gmail.com>
+Author: Reposi3 <reposithree@gmail.com>
+Section: Tweaks
+Version: 1.0.0-1
+Priority: optional
+Depiction: https://timaeshkeria334.github.io/mytweaks/depictions/?p=com.supermamon.oldpackage
+Filename: debs/com.supermamon.oldpackage_1.0.0-1_iphoneos-arm.deb
 Size: 860
 MD5sum: 8c606f0c05217aa2a20949091fe516f0
-Description: This is a sample old package. Firmware should be lower than 7.0
-Name: Old Package
-Author: Reposi3 <reposithree@gmail.com>
-Depiction: https://supermamon.github.io/Reposi3/depictions/?p=com.supermamon.oldpackage
+SHA1: 44f945218a8f72e24ad69191bfee4a89bb7e9bc0
+SHA256: 2d0cf4ea9ddc1d1be3968c869ddd29bd850eae37ccd9b35d100f72b7aca62f8e
+SHA512: 46768496071d6b6bc93e6ce85c275aa38ac2e8aa0a075d227325f0e6261f9fde70333e7346fa0c43628e391537efe135c7d8775e0b271be76222737a0e8e48bb
+
+Package: ellekit
+Name: ElleKit
+Version: 1.2
+Architecture: iphoneos-arm64
+Maintainer: Dhinak G <dhinak@dhinak.net>
+Conflicts: com.ex.substitute, org.coolstar.libhooker, science.xnu.substitute, mobilesubstrate, com.saurik.substrate.safemode
+Replaces: com.ex.libsubstitute, org.coolstar.libhooker, mobilesubstrate
+Provides: mobilesubstrate (= 99), org.coolstar.libhooker (= 1.6.9)
+Author: ElleKit Team
+Section: Tweak Injection
+Priority: optional
+Icon: https://ellekit.space/logos/logo.png
+Description: ElleKit tweak injection libraries and loader
+Filename: debs/ellekit_1.2_iphoneos-arm64.deb
+Size: 331444
+MD5sum: 08cc1616ce6387b573c7c9fd21ed5cf9
+SHA1: bd232da8335cd9e2dc5d4911d99bd99d0331b279
+SHA256: e21dc91bdc1be193dc915daecfff45256239b4fe583a36861e662ab1f43906dc
+SHA512: ee6c54fe014dbc6630a6e929a273c0f5ad65ac1b1494e9ad36dbe1fb2aea4a20bcf73d8744fead5a277670c12927680ad5d75e66b7949fdf16bc1dc4067ff313
+
+Package: ellekit
+Name: ElleKit
+Version: 1.2
+Architecture: iphoneos-arm
+Maintainer: Dhinak G <dhinak@dhinak.net>
+Conflicts: com.ex.substitute, org.coolstar.libhooker, science.xnu.substitute, mobilesubstrate, com.saurik.substrate.safemode
+Replaces: com.ex.libsubstitute, org.coolstar.libhooker, mobilesubstrate
+Provides: mobilesubstrate (= 99), org.coolstar.libhooker (= 1.6.9)
+Author: ElleKit Team
+Section: Tweak Injection
+Priority: optional
+Icon: https://ellekit.space/logos/logo.png
+Description: ElleKit tweak injection libraries and loader
+Filename: debs/ellekit_1.2_iphoneos-arm.deb
+Size: 330208
+MD5sum: 4e171bcc1cf53e997ae54a335bd41ed0
+SHA1: 485e6c42ea3dcb1243eeb1ebb4eeefbd3efc640d
+SHA256: 3ae1e48245c947fb4f6011a89ecf9d19c89832dda76c5af0350c95d2f123ef93
+SHA512: 6da3270b68b359faaef4b1b704ca5e00e546a72f90f1a0fc9dee0dcc67370bc8d51771f3a13c6caa81566fa56e993f3cc3dd9708eb22a0f5964f689611729b06
 

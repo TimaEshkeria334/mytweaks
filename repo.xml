@@ -1,12 +1,17 @@
 <repo>
 	<footerlinks>
 		<link>
-			<name>Follow me on Twitter</name>
-			<url>https://twitter.com/reposi3</url>
-			<iconclass>fa fa-twitter</iconclass>
+			<name>AppSync Unified — official repo</name>
+			<url>https://cydia.akemi.ai/</url>
+			<iconclass>fa fa-download</iconclass>
 		</link>
 		<link>
-			<name>I want this depiction template</name>
+			<name>ElleKit — official repo</name>
+			<url>https://ellekit.space/</url>
+			<iconclass>fa fa-download</iconclass>
+		</link>
+		<link>
+			<name>Depiction template by Reposi3</name>
 			<url>https://github.com/supermamon/Reposi3/</url>
 			<iconclass>fa fa-thumbs-up</iconclass>
 		</link>
