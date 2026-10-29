@@ -120,3 +120,71 @@ SHA1: 485e6c42ea3dcb1243eeb1ebb4eeefbd3efc640d
 SHA256: 3ae1e48245c947fb4f6011a89ecf9d19c89832dda76c5af0350c95d2f123ef93
 SHA512: 6da3270b68b359faaef4b1b704ca5e00e546a72f90f1a0fc9dee0dcc67370bc8d51771f3a13c6caa81566fa56e993f3cc3dd9708eb22a0f5964f689611729b06
 
+Package: zz.test.asu1
+Version: 1.0
+Architecture: iphoneos-arm
+Name: TEST 1 minimal
+Description: Diagnostic entry for repo index tests.
+Section: Tweaks
+Maintainer: timagray
+Author: timagray
+Priority: optional
+Filename: debs/zz.test.asu1_1.0_iphoneos-arm.deb
+Size: 686
+MD5sum: 650313a2b89671a1dd8f9a730ea4d2eb
+SHA1: 39f3c4a3aab5642cac10c7b6329e48eb4ef7c524
+SHA256: 3b050ed89d51046931a6995ac799780740932908e2336a945c873ce40f98631d
+SHA512: c580fbdcddab41958ccc858b821e68fb64b318c8b0c3f136b7ae1f77915754ecb3181053c49d85c7eab1e382a17ec5394b6685112c434939565043d1b3327fab
+
+Package: zz.test.asu2
+Version: 1.0
+Architecture: iphoneos-arm
+Name: TEST 2 no upper bound
+Description: Diagnostic entry for repo index tests.
+Section: Tweaks
+Maintainer: timagray
+Author: timagray
+Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5100)
+Priority: optional
+Filename: debs/zz.test.asu2_1.0_iphoneos-arm.deb
+Size: 736
+MD5sum: 6110d392f537215f42f3ca97471cd588
+SHA1: ac6713a8f1346e99d7ebbe99a819ccc526f54d2d
+SHA256: 8d94fdf0df0f6c4566a6db12075aaadfbacb0b886931c1ac3f0e8f7c645be5a6
+SHA512: c2130bf335612a39a42614cfaa1b64c59574d392a6ecb4cc6156b5fe66425a95ce49e553ede0f15b4ebe284ec841c58048433e1f1daf4fbc180c970382253eb5
+
+Package: zz.test.asu3
+Version: 1.0
+Architecture: iphoneos-arm
+Name: TEST 3 same Depends as AppSync
+Description: Diagnostic entry for repo index tests.
+Section: Tweaks
+Maintainer: timagray
+Author: timagray
+Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5100), firmware (<= 18.2)
+Priority: optional
+Filename: debs/zz.test.asu3_1.0_iphoneos-arm.deb
+Size: 748
+MD5sum: 0e2149c984978ca2dd7ceea97b565eb7
+SHA1: 53b0a7f6cec7a4032c275a50beb1d1262ffa91f7
+SHA256: eae7ab2e31cd1a59e68eb37d250e82df706031d94a4f77210afe1abfcf0e19b6
+SHA512: f7bdb67ee360dd9b0f4cf7c5f90a6e702f68956d9855fe2f63ffd180ba476c5ea590fd05a37bad85a669dbea5b4d4a0919e5f060771f08b202c9dab41913225b
+
+Package: zz.test.asu4
+Version: 1.0
+Architecture: iphoneos-arm
+Name: TEST 4 Depends + all Conflicts
+Description: Diagnostic entry for repo index tests.
+Section: Tweaks
+Maintainer: timagray
+Author: timagray
+Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5100), firmware (<= 18.2)
+Conflicts: us.hackulo.appsync50, us.hackulo.appsync50plus, com.hackyouriphone.appsync7, com.teiron.ppsync, appsync50plus2.25pp, com.linusyang.appsync, com.sull.appsyncunified, com.sull.appsyncunifiedbeta, com.xsellize.appsync50, com.xsellize.appsync50plus, appsync50plus.178, appsync50plus2.178, cydia.net.angelxwind.appsyncunified, com.ifucker.appsync, com.sexyphonetech.appsyncunified, appsyncunifiedofficial, org.digbick.asufixed, cn.mingmei.asu623517234615234813, technology.goated.appsync, technology.goated.appsyncunified, vaginalfisting.appsynctool, science.xnu.substitute, akemi.appsink, akemi.appsyncunifed, akemi.appsyncunifed2, akemi.appsyncunifedpatched, appsyncpatched, appsyncrootless, weaponized.autism.technology.appsyncunified, ellekit (< 1.1)
+Priority: optional
+Filename: debs/zz.test.asu4_1.0_iphoneos-arm.deb
+Size: 1048
+MD5sum: 5a5612819da09a839493577f3f16596a
+SHA1: e7fda46ba695ec5f374007878266e7547298f582
+SHA256: 6b93b535c5dca3ce69a1cfecce1ebc908b178e6a68406ceeadcf672ae623fc04
+SHA512: fbf6bd1a6af7db858521f29d215d4cf696cf42a65a6d25b43879ecdbcdd02de5fbef3e70e460f113444f7252fb8ec85e2c834f1e73aa9efa6743cfe6433295c2
+
