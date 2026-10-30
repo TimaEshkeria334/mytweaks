@@ -21,6 +21,26 @@ SHA1: e0fa412cb3c26718887edd834804c88909297079
 SHA256: 0036f28fcbdb165d4f58968a237ca9fe7b6ed33fea25b9a5eb1fc141f6bf5a09
 SHA512: 8a0d06bf424c760e28d71ec55f430bcb10bc5d09e6579bb84a2aab31b786856dec389f3159d3e016db2e18ab596a6347c388eaaa9c5c388e7c775986879d882a
 
+Package: com.timagray.appsynclite
+Name: AppSyncLite
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Установка неподписанных и fake-signed IPA на iOS 10.x (проверено на 10.3.3).
+Maintainer: timagray
+Author: timagray
+Section: Tweaks
+Depends: mobilesubstrate, firmware (>= 9.0)
+Conflicts: ai.akemi.appsyncunified
+Replaces: ai.akemi.appsyncunified
+Installed-Size: 88
+Priority: optional
+Filename: debs/AppSyncLite_1.0.0_iphoneos-arm.deb
+Size: 7464
+MD5sum: 3c8ea31900ee414e83c2c91071d524ce
+SHA1: f522d454869e0d2791907b39137fda1afc4f334d
+SHA256: 21bd043c0a8b626ad274f27b3d8ba04c12605bc32a78679d60e2d2b7eed92bb3
+SHA512: abe3a0aa5f4862480a4d017552037ff8f88857095fca7c60efee5e0f1b51e588a388f039013fa8f16c5dcd39682f492aae09d8edb5396c409326d813c59d3c35
+
 Package: com.githublegacy.app
 Name: GitHub Legacy
 Description: A lightweight GitHub client for iOS 5+ devices - browse repositories, read READMEs, and download releases.

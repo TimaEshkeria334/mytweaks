@@ -6,14 +6,14 @@ Codename: ios
 Architectures: iphoneos-arm
 Components: main
 Description: my tweaks for ios 12.5.8(5s)
-Date: Thu, 29 Oct 2026 13:10:06 UTC
+Date: Fri, 30 Oct 2026 05:42:41 UTC
 MD5Sum:
- b4efc4b662c37cb98494384d09567a2d             7599 Packages
- ad714cb33bab45a0a4c5c7268b9c1605             3177 Packages.gz
- 565bdb458e63e6526c376cc04ad8e2ef             3216 Packages.bz2
- 2191fa1c6e545c79da10a865f6ba6b38             3020 Packages.xz
+ f4f0a82400469763711b3c696b01ac47             8384 Packages
+ 28192d547a695a4df216300261966b07             3505 Packages.gz
+ 652ee866c2cebfc2e7fb8276e112ec2b             3497 Packages.bz2
+ b2a8070417e43060ce1309fce0705156             3300 Packages.xz
 SHA256:
- 01ef14c4b27ae22dd96b925145caa25b2ea3122b6b19859081c32c869117309d             7599 Packages
- ea10d76c684e0ca00fe259cdbb9e36803c48d23f41eaf859264960f8a2b0e053             3177 Packages.gz
- a8fbf09a1662adc747029b39b422a5da427c8069de3b19869e03112140f44075             3216 Packages.bz2
- 3724159f6ce8bcf0040b3ed1b5507d8733e7384a02511c8d433ae4c0fcb23c9e             3020 Packages.xz
+ bf27199ac80ab390e486d43d3c1b7c4b399f3c8189eb26eddb56699383d67031             8384 Packages
+ 33c34b6f2ff58dc0ca53017726f7ccd29322170bf2b7bd2eb99132482305567f             3505 Packages.gz
+ 446969876c5060971b1bc107c0e5e51da304f027d4adb7288b3f88f488ee3d87             3497 Packages.bz2
+ 172320bed75990a53645c316035d35095b58e6c17c2595d448706fd41c348baa             3300 Packages.xz
