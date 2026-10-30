@@ -142,7 +142,7 @@ if ! command -v gh >/dev/null 2>&1; then
 fi
 
 GH_REPO="${GH_REPO:-$(git -C "$REPO" remote get-url origin 2>/dev/null |
-	sed -E 's#.*github\.com[:/]([^/]+/[^/]+?)(\.git)?$#\1#')}"
+	sed -E 's#\.git$##; s#.*github\.com[:/]##')}"
 [ -n "$GH_REPO" ] || { warn "не удалось определить GitHub-репозиторий"; exit 0; }
 
 if [ -z "$changed" ]; then

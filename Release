@@ -6,14 +6,14 @@ Codename: ios
 Architectures: iphoneos-arm
 Components: main
 Description: my tweaks for ios 12.5.8(5s)
-Date: Fri, 30 Oct 2026 06:18:36 UTC
+Date: Fri, 30 Oct 2026 06:19:00 UTC
 MD5Sum:
  f4f0a82400469763711b3c696b01ac47             8384 Packages
- 5c26f68d49854cc10cb14a8c67acfba6             3505 Packages.gz
+ e20ccde09ddcec95cd046edbd4598f31             3505 Packages.gz
  652ee866c2cebfc2e7fb8276e112ec2b             3497 Packages.bz2
  b2a8070417e43060ce1309fce0705156             3300 Packages.xz
 SHA256:
  bf27199ac80ab390e486d43d3c1b7c4b399f3c8189eb26eddb56699383d67031             8384 Packages
- 14f0c8b51e90426828283773776d3548d09915e154c4504f50a00422c33c9c45             3505 Packages.gz
+ ea6a0fef744256ccce49746833ceabfa620f211c629f0bda9450609ce3e15823             3505 Packages.gz
  446969876c5060971b1bc107c0e5e51da304f027d4adb7288b3f88f488ee3d87             3497 Packages.bz2
  172320bed75990a53645c316035d35095b58e6c17c2595d448706fd41c348baa             3300 Packages.xz
