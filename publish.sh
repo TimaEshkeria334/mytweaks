@@ -118,7 +118,7 @@ fi
 
 if [ "$PUSH" = "1" ] && [ -d "$REPO/.git" ]; then
 	log "Коммит и push"
-	( cd "$REPO" && git add debs Packages Packages.gz Packages.bz2 Packages.xz Release publish.sh 2>/dev/null || true )
+	( cd "$REPO" && git add debs Packages Packages.gz Packages.bz2 Packages.xz Release publish.sh README.md 2>/dev/null || true )
 	if ( cd "$REPO" && ! git diff --cached --quiet ); then
 		( cd "$REPO" && git commit -m "Publish: $(date -u '+%Y-%m-%d %H:%M')" )
 		( cd "$REPO" && git push origin "$(git branch --show-current)" )

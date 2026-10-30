@@ -14,6 +14,7 @@ https://timaeshkeria334.github.io/mytweaks/
 | Пакет | Версия | Архитектуры | Описание |
 |---|---|---|---|
 | `ai.akemi.appsyncunified` | 116.0 | `iphoneos-arm`, `iphoneos-arm64` | AppSync Unified — установка неподписанных / fakesigned IPA |
+| `com.timagray.appsynclite` | 1.0.0 | `iphoneos-arm` (arm64) | AppSyncLite — свой твик для установки неподписанных IPA на iOS 10.x (конфликтует с AppSync Unified) |
 | `ellekit` | 1.2 | `iphoneos-arm`, `iphoneos-arm64` | Tweak-инъектор, предоставляет `mobilesubstrate` |
 | `com.githublegacy.app` | 1.1 | `iphoneos-arm` | GitHub Legacy — клиент GitHub для iOS 5+ |
 | `com.ra1nndev.yamus1c` | 2.1.2 | `iphoneos-arm` | YaMus1c — клиент Яндекс.Музыки для iOS 6 |
@@ -73,10 +74,30 @@ Conflicts: ... , ellekit (< 1.1)
 ├── Packages{,.gz,.bz2,.xz}
 ├── Release                # метаданные + хеши индексов
 ├── update-repo.sh         # пересборка индексов APT
+├── publish.sh             # автосборка твиков + индексы + push + GitHub Releases
 ├── depictions/            # HTML-страницы описаний (?p=<package>)
 ├── CydiaIcon.png          # иконка репозитория
 └── index.html             # лендинг
 ```
+
+## publish.sh — автоопределение твиков и релизы
+
+Скрипт сам находит все твики в `~/tweaks/*/` (по наличию `control`), собирает их
+(`build.sh` или `make package`, если задан `THEOS`), раскладывает `.deb` в репозиторий,
+перегенерирует индексы, синхронизирует LAN-зеркало, коммитит/пушит и создаёт
+GitHub Release с прикреплённым `.deb`.
+
+```sh
+./publish.sh                  # всё сразу
+BUILD=0 ./publish.sh          # без сборки, взять готовые .deb
+PUSH=0 RELEASES=0 ./publish.sh
+RELEASE_ALL=1 ./publish.sh    # релизить все секции, а не только Tweaks
+```
+
+Тег релиза: `<Package>-v<Version>`, например `com.timagray.appsynclite-v1.0.0`.
+Если такой тег уже есть — ассет обновляется (`--clobber`), если `.deb` изменился.
+
+Переменные: `TWEAKS`, `REPO`, `LAN`, `BUILD`, `PUSH`, `RELEASES`, `RELEASE_ALL`, `GH_REPO`.
 
 ## Добавить / обновить пакет
 
